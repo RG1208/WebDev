@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Box Model</title>
+
+    <style>
+        .box {
+            padding: 20px;
+            border: 20px solid black;
+        }
+
+        .box1 {
+            margin: 25px;
+            background-color: aqua;
+
+        }
+
+        .box2 {
+            margin: 55px;
+            background-color: rgb(77, 179, 109);
+        }
+
+        p {
+            margin: 20px;
+            font-size: 20px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Here we will be learning Box model which includes Margin padding and border </h1>
+    <!-- we can add more than 2 class. -->
+    <div class="box1 box">I am box 1</div>
+    <div class="box2 box">I am box 2</div>
+
+    <p>
+        margin collapse is a usefull feature. <br>
+        lets suppose we have 2 div with each of margin 20 and 30 px resp. thenthe
+        margin between these two div will be the one with the greatest between the two div
+    </p>
+
+    <p>
+        box sizing - border box<br>
+        in this Lets suppose we have given a height of 200px to a div then the height will include the
+        border,padding,the height of the actual content.
+    </p>
+
+</body>
+
+</html>
