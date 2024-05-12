@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: pink;
+            border: 2px solid black;
+            position: sticky;
+        }
+
+        .upper {
+            background-color: green;
+            border: 2px solid black;
+
+        }
+
+
+
+        .left-img {
+            width: 300px;
+            height: 500px;
+            margin-left: 400px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .right-img {
+            width: 300px;
+            height: 500px;
+            margin-right: 200px;
+            margin-left: 100px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+
+        .footer {
+            background-color: white;
+            border: 2px solid black;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        ul {
+            display: flex;
+            margin-left: 900px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+
+        <ul>
+            <li class="home">Home</li>
+            <li class="about">About us</li>
+            <li class="ervice"> Services</li>
+            <li class="featured">Featured</li>
+            <li class="contact">Contact us</li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="body">
+
+        <div class="upper">
+
+            <img class="left-img" src="https://i.pinimg.com/564x/20/7e/97/207e9789b72dce409efe4609e576ea3e.jpg">
+
+            <img class="right-img" src="https://i.pinimg.com/564x/fb/26/bf/fb26bf0dadfd3741e5e6ea9a8a2f8a4b.jpg">
+
+        </div>
+        <div class="lower"></div>
+
+    </div>
+
+
+    <div class="footer"></div>
+</body>
+
+</html>
