@@ -75,6 +75,87 @@
             width: 300px;
             height: 50px;
         }
+
+        .links {
+            display: grid;
+            grid-template-areas: "en de it"
+                "es fr po"
+                "ja ko ch";
+            margin: 150px;
+            gap: 100px;
+            margin-left: 250px;
+            margin-right: 280px;
+
+        }
+
+        .english {
+            grid-area: en;
+            background-color: aqua;
+            border: 2px solid black;
+            height: 150px;
+        }
+
+        .deutsch {
+            grid-area: de;
+            background-color: aqua;
+            border: 2px solid black;
+            height: 150px;
+        }
+
+        .italiano {
+            grid-area: it;
+            background-color: aqua;
+            border: 2px solid black;
+            height: 150px;
+        }
+
+        .espanol {
+            grid-area: es;
+            background-color: aqua;
+            border: 2px solid black;
+            height: 150px;
+
+        }
+
+        .francais {
+            grid-area: fr;
+            background-color: aqua;
+            border: 2px solid black;
+            height: 150px;
+        }
+
+        .portugues {
+            grid-area: po;
+            background-color: aqua;
+            border: 2px solid black;
+            height: 150px;
+        }
+
+        .japan {
+            grid-area: ja;
+            background-color: aqua;
+            border: 2px solid black;
+            height: 150px;
+        }
+
+        .korean {
+            grid-area: ko;
+            background-color: aqua;
+            border: 2px solid black;
+            height: 150px;
+        }
+
+        .chinese {
+            grid-area: ch;
+            background-color: aqua;
+            border: 2px solid black;
+            height: 150px;
+        }
+
+        .txt {
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 
@@ -110,7 +191,18 @@
     </div>
 
 
-    <div class="links"></div>
+    <div class="links">
+        <div class="english language"><span class="txt">English</span></div>
+        <div class="deutsch language">Deutsch</div>
+        <div class="italiano language">Italiano</div>
+        <div class="espanol language">Espanol</div>
+        <div class="francais language">Francais</div>
+        <div class="portugues language">Portugues</div>
+        <div class="japan language">Japan</div>
+        <div class="korean language">Korean</div>
+        <div class="chinese language">Chinese</div>
+
+    </div>
 
 </body>
 
