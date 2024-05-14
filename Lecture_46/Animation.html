@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animations</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            background-color: beige;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .box {
+            background-color: aquamarine;
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            padding-top: 40px;
+            animation-name: RachitAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            /* these are the individual properties which can be combined as */
+            /* animation: RachitAnimation 5s ease-in-out 1s; */
+
+
+        }
+
+        @keyframes RachitAnimation {
+            from {
+                background-color: red;
+                transform: translateY(100px);
+            }
+
+            to {
+                background-color: yellow;
+                transform: translateX(100px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box animation">BOX</div>
+    </div>
+</body>
+
+</html>
