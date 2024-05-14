@@ -78,9 +78,7 @@
 
         .links {
             display: grid;
-            grid-template-areas: "en de it"
-                "es fr po"
-                "ja ko ch";
+            grid-template-columns: 1fr 1fr 1fr;
             margin: 150px;
             gap: 50px;
             margin-left: 250px;
@@ -88,8 +86,7 @@
 
         }
 
-        .english {
-            grid-area: en;
+        .container {
             background-color: rgb(247, 247, 247);
             border: none;
             height: 130px;
@@ -98,95 +95,6 @@
             font-weight: bold;
             font-size: 20px;
 
-        }
-
-        .deutsch {
-            grid-area: de;
-            background-color: rgb(247, 247, 247);
-            border: none;
-            height: 130px;
-            text-align: center;
-            padding-top: 20px;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        .italiano {
-            grid-area: it;
-            background-color: rgb(247, 247, 247);
-            border: none;
-            height: 130px;
-            text-align: center;
-            padding-top: 20px;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        .espanol {
-            grid-area: es;
-            background-color: rgb(247, 247, 247);
-            border: none;
-            height: 130px;
-            text-align: center;
-            padding-top: 20px;
-            font-weight: bold;
-            font-size: 20px;
-
-        }
-
-        .francais {
-            grid-area: fr;
-            background-color: rgb(247, 247, 247);
-            border: none;
-            height: 130px;
-            text-align: center;
-            padding-top: 20px;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        .portugues {
-            grid-area: po;
-            background-color: rgb(247, 247, 247);
-            border: none;
-            height: 130px;
-            text-align: center;
-            padding-top: 20px;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        .japan {
-            grid-area: ja;
-            background-color: rgb(247, 247, 247);
-            border: none;
-            height: 130px;
-            text-align: center;
-            padding-top: 20px;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        .korean {
-            grid-area: ko;
-            background-color: rgb(247, 247, 247);
-            border: none;
-            height: 130px;
-            text-align: center;
-            padding-top: 20px;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        .chinese {
-            grid-area: ch;
-            background-color: rgb(247, 247, 247);
-            border: none;
-            height: 130px;
-            text-align: center;
-            padding-top: 20px;
-            font-weight: bold;
-            font-size: 20px;
         }
 
         .downloadLink {
@@ -203,6 +111,12 @@
             font-size: 12px;
             font-weight: bold;
             color: white;
+        }
+
+        @media screen and (max-width: 1145px) {
+            .links {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -240,55 +154,61 @@
 
 
     <div class="links">
-        <div class="english language">English
+        <div class="container">English
             <button class="downloadLink">
                 Download 64-bit
             </button>
         </div>
 
-        <div class="deutsch language">Deutsch
+        <div class="container">Deutsch
             <button class="downloadLink">
                 Download 64-bit
             </button>
         </div>
 
-        <div class="italiano language">Italiano
+        <div class="container">Italiano
             <button class="downloadLink">
                 Download 64-bit
             </button>
         </div>
 
-        <div class="espanol language">Espanol
+        <div class="container">Espanol
             <button class="downloadLink">
                 Download 64-bit
             </button>
         </div>
 
-        <div class="francais language">Francais
+        <div class="container">Francais
             <button class="downloadLink">
                 Download 64-bit
             </button>
         </div>
 
-        <div class="portugues language">Portugues
+        <div class="container">Portugues
             <button class="downloadLink">
                 Download 64-bit
             </button>
         </div>
 
-        <div class="japan language">Japan
+        <div class="container">Japan
             <button class="downloadLink">
                 Download 64-bit
             </button>
         </div>
 
-        <div class="korean language">Korean
+        <div class="container">Korean
             <button class="downloadLink">
                 Download 64-bit
             </button>
         </div>
 
-        <div class="chinese language">Chinese
+        <div class="container">Chinese
+            <button class="downloadLink">
+                Download 64-bit
+            </button>
+        </div>
+
+        <div class="container"> Traditional Chinese
             <button class="downloadLink">
                 Download 64-bit
             </button>
