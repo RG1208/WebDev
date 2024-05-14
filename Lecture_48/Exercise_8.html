@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bouncing Ball</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            background-color: blue;
+            height: 99vh;
+            width: 99vw;
+            position: relative;
+        }
+
+        .ball {
+            background-color: red;
+            height: 90px;
+            width: 90px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 50%;
+            animation: TranslateX 3s linear infinite, TranslateY 1s alternate infinite;
+        }
+
+        @keyframes TranslateX {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 100%;
+
+            }
+        }
+
+        @keyframes TranslateY {
+            from {
+
+                bottom: 0;
+            }
+
+            to {
+                bottom: 100%;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
