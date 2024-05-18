@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+    d = Math.random()
+    console.log(d)
+
+    let a = prompt("enter first number")
+    let b = prompt("enter second number")
+    let c = prompt("Enter the operation you want to perform")
+
+    let obj = {
+        "+": "-",
+        "-": "/",
+        "*": "+",
+        "/": "**",
+    }
+
+    if (d <= 0.1) {
+        c = obj[c]
+        alert(`The result is ${eval(`${a} ${c} ${b}`)} `)
+    }
+    else {
+
+        alert(`The result is ${eval(`${a} ${c} ${b}`)} `)
+    };
+    console.log(`The result of  ${(`${a} ${c} ${b}`)} is ${eval(`${a} ${c} ${b}`)}`);
+</script>
+
+
+</html>
