@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 12</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 23px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            width: 45px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        Given 5 boxes, Assign a random color and a random background to each box using DOM concepts
+     -->
+    <div class="container">
+        <div class="box" id="box1">Box</div>
+        <div class="box" id="box2">Box</div>
+        <div class="box" id="box3">Box</div>
+        <div class="box" id="box4">Box</div>
+        <div class="box" id="box5">Box</div>
+    </div>
+
+    <script>
+        a = Math.random()
+        console.log(a)
+        if (a <= 0.20) {
+            document.getElementById("box1").style.backgroundColor = "red";
+        }
+        else if (a <= 0.40 && a > 0.20) {
+            document.getElementById("box2").style.backgroundColor = "yellow";
+        }
+        else if (a <= 0.60 && a > 0.40) {
+            document.getElementById("box3").style.backgroundColor = "aqua";
+        }
+        else if (a <= 0.80 && a > 0.60) {
+            document.getElementById("box4").style.backgroundColor = "blue";
+        }
+        else {
+            document.getElementById("box5").style.backgroundColor = "brown";
+        }
+    </script>
+
+</body>
+
+</html>
