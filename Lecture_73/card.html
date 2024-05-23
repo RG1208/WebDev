@@ -7,12 +7,13 @@
     <title>Document</title>
 
     <style>
-        .container {
+        .card {
             width: 1100px;
             height: auto;
             border: 2px solid black;
             display: flex;
             background-color: black;
+            margin-bottom: 10px;
         }
 
         .image {
@@ -34,27 +35,50 @@
             padding-left: 10px;
             margin-top: 30px;
         }
+
+        .left {
+            position: relative;
+
+        }
+
+        .time {
+            position: absolute;
+            background-color: black;
+            color: white;
+            font-size: 13px;
+            font-family: roboto, arial;
+            font-weight: bold;
+            padding-left: 5px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-right: 5px;
+            bottom: 20px;
+            right: 15px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
+        <div class="card">
 
-        <div class="left">
-            <img src="thumbnail.jpg" class="image" alt="thumbnail">
-        </div>
-
-        <div class="right">
-
-            <div class="up">
-                <h3>Installing VS Code & How Websites Work | Sigma Web Development Course - Tutorial #1</h3>
+            <div class="left">
+                <img src="thumbnail.jpg" class="image" alt="thumbnail">
+                <div class="time">31:20</div>
             </div>
 
-            <div class="down">
-                <p>CodeWithHarry &#183 1.7M views &#183 7 months ago </p>
+            <div class="right">
+
+                <div class="up">
+                    <h3>Installing VS Code & How Websites Work | Sigma Web Development Course - Tutorial #1</h3>
+                </div>
+
+                <div class="down">
+                    <p>CodeWithHarry &#183 1.7M views &#183 7 months ago </p>
+                </div>
 
             </div>
-
         </div>
 
     </div>
